@@ -1,0 +1,261 @@
+.wrapper-moviepage {
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  box-shadow: inset 0 0 0 2000px rgba(35, 31, 34, 0.3);
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  margin: 5vh 0;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border-radius: 1vh;
+  font-size: 2.4vh;
+  font-weight: 300;
+  box-shadow: 0 7px 30px -10px rgba(35, 31, 34, 1);
+}
+
+.content > :nth-child(2n) {
+  background-color: rgba(244, 244, 245, 0.9);
+  color: rgba(35, 31, 34);
+}
+
+.content > :nth-child(2n -1) {
+  background-color: rgba(35, 31, 34, 0.9);
+  color: rgba(244, 244, 245);
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+}
+.main-content .movie-poster {
+  width: 40vh;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 90%;
+  }
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-content .movie-poster {
+    width: 100%;
+  }
+}
+
+.movie-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  padding: 3vh 2vh;
+  overflow: auto;
+}
+
+.title-tagline-rating {
+  display: flex;
+  flex-direction: column;
+  font-size: 5vh;
+}
+
+.title-rating {
+  display: flex;
+  align-items: center;
+}
+
+.title-rating img {
+  height: 2.8vh;
+  margin: 0 1vh 0 2vh;
+}
+.title-rating p {
+  font-size: 3vh;
+}
+
+.tagline {
+  font-size: 2.5vh;
+  margin: 1vh 0;
+}
+
+.plot {
+  margin-top: 3vh;
+  font-weight: 300;
+}
+
+.genres {
+  margin: 3vh 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.genres > :first-child {
+  margin-right: 1vh;
+  font-weight: 600;
+}
+.genre-card {
+  font-weight: 600;
+  color: var(--bg-primary);
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 1vh 1.5vh;
+  background-color: #f5c518;
+  border-radius: 1vh;
+  margin: 0.5vh;
+  width: fit-content;
+}
+
+.add-watchlist {
+  margin: auto 0 0 auto;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh;
+  font-size: 2.3vh;
+  font-weight: 600;
+  background-color: var(--secondary-color);
+  box-shadow: 1vh 1vh 2vh -1vh rgba(0, 0, 0, 0.59);
+  border: none;
+  border-radius: 1vh;
+  color: #f4f4f5;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.add-watchlist:hover {
+  background-color: var(--secondary-color-darker);
+}
+
+.moviepage-title {
+  padding: 1vh;
+  margin: 2vh 0;
+  width: fit-content;
+}
+
+.content > :nth-child(2n) .moviepage-title {
+  border-bottom: 0.6vh solid var(--bg-primary);
+}
+
+.content > :nth-child(2n-1) .moviepage-title {
+  border-bottom: 0.6vh solid #f4f4f5;
+}
+
+.section {
+  width: 100%;
+  padding: 2vh;
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  font-weight: 600;
+  color: #f4f4f5;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 1vh 1.5vh;
+  background-color: var(--bg-secondary);
+  border-radius: 1vh;
+  margin: 0.5vh;
+  width: fit-content;
+}
+.info-card svg {
+  margin-right: 1vh;
+}
+.cards-title {
+  color: var(--bg-primary);
+}
+
+.cast-cards {
+  font-size: 2vh;
+  width: 100%;
+  padding: 1vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 12.5%);
+  margin-bottom: 2vh;
+  grid-gap: 1.5vh;
+  justify-content: space-between;
+}
+
+.current-page {
+  background-color: var(--bg-secondary);
+}
+
+/* Smaller Screens */
+
+@media screen and (max-width: 768px) {
+  .cast-cards {
+    grid-template-columns: repeat(auto-fill, 30%);
+  }
+}
+
+.cast-card img {
+  width: 100%;
+}
+.cast-card p {
+  padding: 1vh;
+}
+p > strong {
+  font-weight: 550;
+}
+
+/* Reviews CSS */
+.reviews {
+  width: 100%;
+}
+
+.review {
+  display: flex;
+  flex-direction: row;
+  padding: 1vh 0;
+}
+
+.review-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.review-title > h3 {
+  padding-right: 2vh;
+}
+.review-title > p {
+  display: flex;
+  align-items: center;
+  width: 10vh;
+  font-weight: 700;
+}
+.review-info {
+  padding: 1vh;
+  width: auto;
+}
+.user-image {
+  height: 8vh;
+  width: 8vh;
+  border-radius: 50%;
+  box-shadow: 0vh 1vh 1vh -1vh rgba(0, 0, 0, 0.59);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
