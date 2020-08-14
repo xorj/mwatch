@@ -1,6 +1,6 @@
 # MWatch
 
-Choose your next movie or review an old one with this React application that uses TMDb and OMDb to get data and be populated.
+Choose your next movie or review an old one with this React application that uses TMDb and OMDb to get data from all sort of movies.
 
 ## User Stories
 
