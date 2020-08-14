@@ -1,7 +1,7 @@
 # MWatch
 
 Choose your next movie or review an old one with this React application that uses TMDb and OMDb to get data from all sorts of movies.
-![Alt Text](https://user-images.githubusercontent.com/61337156/90243332-182c9880-de05-11ea-80f4-8e4b47a0880b.png)
+
 ## User Stories
 
 -   [X] User can see all the latest movie on the front page
@@ -15,3 +15,8 @@ Choose your next movie or review an old one with this React application that use
 -   [X] User can create their own watchlist
 -   [X] User can review movies
 
+### On PC
+![ON PC](https://user-images.githubusercontent.com/61337156/90243640-a1dc6600-de05-11ea-9f82-cb76c3e7cb85.png)
+
+### On Mobile
+![ON MOBILE](https://user-images.githubusercontent.com/61337156/90243829-f7b10e00-de05-11ea-95f4-8973f75da16b.png)
