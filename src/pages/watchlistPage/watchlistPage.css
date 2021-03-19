@@ -1,0 +1,13 @@
+.watchlist-wrapper {
+  margin-top: 5vh;
+  margin-bottom: auto;
+  display: flex;
+  width: 100%;
+  font-size: 2.2vh;
+  display: flex;
+  justify-content: center;
+}
+
+.watchlist {
+  width: 100%;
+}

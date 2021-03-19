@@ -1,0 +1,83 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: #251e1e;
+  color: #f4f4f5;
+  border: 0.2vh solid #1c1313;
+  width: 70vw;
+  box-sizing: border-box;
+  margin: 1vh 0;
+  border-radius: 0.5vh;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover {
+  -webkit-transform: scale(1.003);
+  -moz-transform: scale(1.003);
+  -ms-transform: scale(1.003);
+  -o-transform: scale(1.003);
+  transform: scale(1.003);
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 4vh;
+  font-size: 1.8vh;
+  line-height: 2.4vh;
+  height: 30vh;
+  width: 100%;
+  text-align: justify;
+}
+.text-box .title {
+  font-size: 2vh;
+  padding: 10px;
+}
+.overview {
+  padding-bottom: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+.poster {
+  height: 30vh;
+}
+
+.button {
+  justify-self: end;
+  align-self: end;
+  margin: auto 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  padding: 1.5vh;
+  font-size: 2vh;
+  font-weight: 600;
+  background-color: var(--secondary-color);
+  box-shadow: 1vh 1vh 2vh -1vh rgba(0, 0, 0, 0.59);
+  border: none;
+  border-radius: 1vh;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--secondary-color-darker);
+}
+
+.button-icon {
+  margin-left: 1vh;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+  .text-box {
+    padding: 1vh 2vh;
+  }
+}

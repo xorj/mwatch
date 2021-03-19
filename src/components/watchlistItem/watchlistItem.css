@@ -1,0 +1,37 @@
+.watchlistitem {
+  margin: 1vh 0;
+  padding: 1vh;
+  width: 100%;
+  display: flex;
+  background-color: var(--bg-secondary);
+}
+
+.watchlistitem > p {
+  display: flex;
+  align-items: center;
+}
+.movie-duration {
+  padding-left: 1vh;
+  color: var(--secondary-color);
+}
+.movie-title {
+  padding-right: 1vh;
+}
+.movie-link {
+  display: flex;
+  align-items: center;
+  color: #f4f4f5;
+  padding: 2vh 1vh;
+}
+.delete-button {
+  margin-left: auto;
+  padding: 1.5vh;
+  color: #f4f4f5;
+  background-color: var(--secondary-color);
+  border: none;
+  transition: all 0.3s;
+}
+
+.delete-button:hover {
+  background-color: var(--secondary-color-darker);
+}
